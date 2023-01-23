@@ -36,6 +36,7 @@ describe "temperature conversion functions" do
       expect(ctof(20)).to eq(68)
     end
 
+    
     it "converts body temperature" do
       expect(ctof(37)).to be_within(0.1).of(98.6)
       # Why do we need to use be_within?
